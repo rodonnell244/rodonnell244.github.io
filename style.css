@@ -768,9 +768,10 @@ ul.skills li {
 		font-size:40px;
 	}
 
-	/*.footer-top{
-		display:none; 
-	}*/
+	.footer-top{
+		width: 100px;
+		height: 60px;
+	}
 	.footer-text{ 
 		font-size:30px; 
 	}
