@@ -779,6 +779,11 @@ ul.skills li {
 		height:80px;
 		background-size:80px; 
 	}
+	
+	.dropdown-content {
+		right: 10px;
+		top:70px;
+}
 
 }
 
