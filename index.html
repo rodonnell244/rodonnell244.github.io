@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Rachel O'Donnell's Portfolio </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="Rachel O'Donnell">
+  <meta name="Keywords" content="Developer, Programmer, Portfolio, html, css, oracle, apex, pl/sql, php, mysql, javascript, jquery, web">
+  <meta name="Description" content="A portfolio site including information about me, my work and contact information">
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css?version=6">
+<script type="text/javascript" src="main.js?version=5"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	 
+ </head>
+
+ <body>
+	<div class="header" id="header">
+			<div class="head-left">
+			<a href="index.html">
+				<h1 class="title-font">Rachel O'Donnell</h1>
+				<h3 class="desc-font">Web developer</h3>
+			</a>
+			</div>
+			<nav class="menu">
+				<ul class="menu-click">	
+					<!--<li><a href="index.html" value="0">Home</a></li>-->
+					<li><a href="#" onclick="goto(this)" value="me">About</a></li> <!--about and skills-->
+					<li><a href="#" onclick="goto(this)" value="work">Work</a></li>
+					<li><a href="#" onclick="goto(this)" value="contact">Contact</a></li>
+				</ul>
+				
+					<div class="menu-drop">
+					<button onclick="dropdwn_jf()" class="menubtn"> &#9776;</button>
+					<div id="menu-drop-c" class="dropdown-content">
+						<a href="#" onclick="goto(this)" value="me">About</a>
+						<a href="#" onclick="goto(this)" value="work">Work</a>
+						<a href="#" onclick="goto(this)" value="contact">Contact</a>
+					</div>
+				</div>
+			</nav>
+	</div>
+		
+	<div class="body">
+		 
+	<div class="about" id="about">
+			<div class="img-me">
+				<nav class="links-circle">
+					<a class="icon-email" title="Email"></a>
+					<a class="icon-cv" title="CV" link="https://docs.google.com/document/d/1NSCAXK0gwcB6ac-vxAqOPBShTaM7k67ZnvTZlXLCzEk/edit?usp=sharing"></a>		
+					<a class="icon-linkedin" link="https://www.linkedin.com/in/rodonnell244/" title="LinkedIn"></a>	
+					<a class="icon-github" title="GitHub" link="https://github.com/rodonnell244/"></a>
+					<a class="icon-ig" title="Instagram" link="https://www.instagram.com/rodonnell244/"></a>
+				</nav>
+			</div>
+
+		<div class="me" id="me">
+			Hi, I'm <span class="name-font"> Rachel O'Donnell</span>, a programmer currently working at MRI Software (formerly Qube Global Software)
+		</div>
+		<div class="info">
+			<p>
+				Experienced Web Developer / Programmer with <span id="years"></span> years demonstrated history of working in the information technology and services industry. Specializes in creating dynamic and beautiful websites and Applications. I have been been gaining experience from working in the field and enjoy every minute of it. I am hard working, work well in teams and individually, a quick learner and overall thinker. 
+			</p>
+			<p>
+			 Strong engineering professional with a Bachelor's degree focused in Computer Science with First class honours from Farnborough college of technology awarded by the university of Surrey. My final year subjects included Advanced Web Management, Real Time Computing, Project Management and Artificial Intelligence. 
+			</p>
+
+			<p>
+			 I graduated in July 2011 and have been working in Crowthorne for Qube Global software from September 2011 to present, where I develop Software called Qube SLM for estate agencies. Qube SLM is an advanced software solution available to both residential sales agents and lettings agents. It is entirely web based, uses live data and based on an Oracle database.
+			</p>
+			<p>
+			My final year project was a Facebook Applicant for use by students interested in the media industy. This allowed users to upload videos and their media work to the application and this can then be seen by the media Profesionals. This uses the Facebook Graph API and Facebook integration such as the comment box. 
+			</p>
+
+		 </div>
+
+		<ul class="skills">
+			<li> Oracle </li>
+			<li> PL/SQL </li>
+			<li> HTML </li>
+			<li> CSS </li>
+			<li> Javascript  </li>
+			<li> jQuery </li>
+			<li> Apex </li>
+			<li> PHP </li>
+			<li> MySQL </li>
+			<li> Databases </li>
+		</ul>
+	</div>
+
+	<div class="work" id="work">
+		<div><a  href="qubeslm.html"><img src="images/qubeslmv4_4.png"></img></a><h3>Qube SLM V4</h3></div>
+	 	<div><a  href="qubeslmv3.html"><img src="images/aspasia/aspasia8.png"></img></a><h3>Qube SLM V3</h3></div>
+		<div><a  href="jobsys.html"><img src="images/jobsystem/jobsys.png"></img></a><h3>Qube Job System</h3></div>
+		<div><a  href="publog.html"><img src="images/publogin/publog.png"></img></a><h3>Qube Public Login</h3></div>
+		<div><a  href="fb.html"><img src="images/fb/fb7.png"></img></a><h3>Facebook Application</h3></div>
+		<div><a  href="ant.html"><img src="images/ant/ant.png"></img></a><h3>Antiques and Interiors</h3></div>
+		<div><a  href="friends.html"><img src="images/friends/friends.png"></img></a><h3>Friends</h3></div>
+		<div><a  href="oth.html"><img src="images/oth/oth.png"></img></a><h3>One Tree Hill</h3></div>
+	</div>
+
+	<div class="contact" id="contact">
+		<h1 class="name-font">Contact</h1>
+		<!--<iframe name="email_if" width="0" height="0" frameborder=0>
+		</iframe>
+		<form id="email_frm" method="post" name="email_frm" action="send-email.php" target="email_if">
+			<div class="filter-form">
+					<label id="error"></label>
+				<div class="form-item"><label>Name</label><input class="textbox" type="text" name="name"></input></div>
+				<hr></hr>
+				<div class="form-item"><label>Email</label><input class="textbox" type="email" name="email"></input></div>
+				<hr></hr>
+				<div class="form-item"><label>Message</label><textarea class="textarea" name="message"></textarea></div>
+				<hr></hr>
+				<div class="form-item">
+					<input class="filter-submit" type="button" onclick="send_email_jf();" name="Send" value="Send"></input>
+				</div>
+			</div>
+		</form>-->		
+		If you would like to get in touch, I'd love to hear from you.
+		<br><br>
+		<ul>
+			<li>Email: <a href="mailto:rodonnell244@outlook.com" title="Email">rodonnell244@outlook.com</a></li>
+			<li>Facebook: <a href="http://www.facebook.com/rach244" target="_blank" title="Facebook">www.facebook.com/rach244</a> </li>
+			<li>Phone: 07774320040</li>
+		</ul>
+	</div>
+</div><!--end body-->
+
+<!--<div id="modal">
+	<div id="popup-box" class="rpt-popupbox">
+		<div class="rpt-popupbox-close"><a title="Click to Close" href="javascript:void(0);" onclick="popup_box_jf(this)"><img class="rpt-popupbox-close-icon" src="/images/icon-close-mobile.svg"/></a></div>
+		<div class="rpt-popupbox-header"><h4> &nbsp;	</h4></div>
+		<div class="rpt-popupbox-item-containter"></div>
+	</div>
+</div>-->
+	<!--https://css-tricks.com/convert-menu-to-dropdown/-->
+	<div class="footer-top"><div class="top-text">^</div></div>
+	<div class="footer">
+		<nav class="footer-links">
+			<a class="icon-email" title="Email"></a>
+			<a class="icon-cv" title="CV" link="https://docs.google.com/document/d/1NSCAXK0gwcB6ac-vxAqOPBShTaM7k67ZnvTZlXLCzEk/edit?usp=sharing"></a>		
+			<a class="icon-linkedin" link="https://www.linkedin.com/in/rodonnell244/" title="LinkedIn"></a>	
+			<a class="icon-github" title="GitHub" link="https://github.com/rodonnell244/"></a>
+			<a class="icon-ig" title="Instagram" link="https://www.instagram.com/rodonnell244/"></a>
+			<a class="icon-fb" title="Facebook" link="https://www.facebook.com/rach244/"></a>
+		</nav>
+		<div class="footer-text">
+			  Rachel O'Donnell 2017
+		</div>
+	</div>
+ </body>
+</html>
